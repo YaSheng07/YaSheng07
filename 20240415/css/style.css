@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    background-color: rgba(247, 231, 178, 0.5);
+}
+body{
+    background-color: rgba(117, 201, 100, 0.5);
+}
+.round{
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.imgL{
+    float: left;
+}
+a{
+    color: rgba(11, 141, 11, 0.5);
+}
+.clear{
+    clear: both;
+}
