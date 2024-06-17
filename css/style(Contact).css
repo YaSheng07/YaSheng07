@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* 加入盒模型，以防止內容超出容器 */
+}
+
+body {
+    background-color: black;
+    font-family: Arial, sans-serif; /* 使用常見的字體 */
+    color: white; /* 預設文字顏色 */
+}
+
+header {
+    background-color: white;
+    height: 80px;
+    width: 100%;
+    position: relative;
+}
+
+header ul {
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+    font-size: 20px;
+}
+
+h1 {
+    position: absolute;
+    left: 120px;
+    top: 0;
+    line-height: 80px;
+    background-image: url(../img/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 210px;
+    text-indent: -9999px;
+}
+
+h2 {
+    color: white; /* 標題文字顏色 */
+    margin-bottom: 20px;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header li {
+    display: inline;
+    margin-right: 4vw;
+}
+
+.search-icon {
+    width: 30px;
+    height: 80px;
+    margin-top: 5px;
+    margin-left: 95%;
+    cursor: pointer;
+}
+
+.contact-content {
+    display: flex; /* 使用 Flexbox 進行排版 */
+    justify-content: space-around; /* 水平分布兩個元素 */
+    max-width: 800px;
+    margin: 20px auto; /* 水平置中 */
+}
+
+.contact-info {
+    flex: 1; /* 佔據左側的空間 */
+    padding: 20px;
+}
+
+.contact-info h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin-right: 10px; /* 調整圖示之間的間距 */
+    width: 20px; /* 調整圖示寬度 */
+    height: 20px; /* 調整圖示高度 */
+}
+
+.contact-form {
+    flex: 1; /* 佔據右側的空間 */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    color: white; /* 白色文字 */
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: calc(100% - 16px); /* 設置寬度，考慮到邊框 */
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff; /* 設置背景顏色 */
+    margin-bottom: 10px; /* 設置元素間距 */
+}
+
+form textarea {
+    height: 100px;
+}
+
+form button {
+    background-color: #007bff; /* 設置按鈕背景顏色 */
+    color: white; /* 設置按鈕文字顏色 */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #0056b3; /* 設置按鈕懸停時的背景顏色 */
+}
